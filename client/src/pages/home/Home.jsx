@@ -21,90 +21,86 @@ function Home() {
           <h1>Explore the marketplace</h1>
           <div className="items">
             <div className="item">
-              <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/graphics-design.d32a2f8.svg"
-                alt=""
-              />
+              <img src="./img/world-wide-web.png" alt="exp" />
               <div className="line"></div>
-              <span>Graphics & Design</span>
+              <span>Website Developers</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/online-marketing.74e221b.svg"
+                src="./img/mobile-development.png"
                 alt=""
               />
               <div className="line"></div>
 
-              <span>Digital Marketing</span>
+              <span>App Craftsmen</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/writing-translation.32ebe2e.svg"
+                src="./img/game-development.png"
                 alt=""
               />
               <div className="line"></div>
-              <span>Writing & Translation</span>
+              <span>Game Creators</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/video-animation.f0d9d71.svg"
+                src="./img/artificial-intelligence.png"
                 alt=""
               />
               <div className="line"></div>
-              <span>Video & Animation</span>
+              <span>AI Visionaries</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/music-audio.320af20.svg"
+                src="./img/business-analysis.png"
                 alt=""
               />
               <div className="line"></div>
-              <span>Music & Audio</span>
+              <span>Data Analyst</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/programming.9362366.svg"
+                src="./img/ui.png"
                 alt=""
               />
               <div className="line"></div>
-              <span>Programming & Tech</span>
+              <span>UI/UX Developers</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/business.bbdf319.svg"
+                src="./img/devops.png"
                 alt=""
               />
               <div className="line"></div>
-              <span>Business</span>
+              <span>DevOps Engineers</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/lifestyle.745b575.svg"
+                src="./img/cloud-computing.png"
                 alt=""
               />
               <div className="line"></div>
-              <span>Lifestyle</span>
+              <span>Cloud Wizards</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/data.718910f.svg"
+                src="./img/cyber-security.png"
                 alt=""
               />
               <div className="line"></div>
-              <span>Data</span>
+              <span>Cyber Guardians</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/photography.01cf943.svg"
+                src="./img/software.png"
                 alt=""
               />
               <div className="line"></div>
-              <span>Photography</span>
+              <span>Software Builders</span>
             </div>
           </div>
         </div>
-      </div>
-      <Slide slidesToShow={4} arrowsScroll={4}>
+      </div>      <Slide slidesToShow={4} arrowsScroll={4}>
         {projects.map((card) => (
           <ProjectCard key={card.id} card={card} />
         ))}
