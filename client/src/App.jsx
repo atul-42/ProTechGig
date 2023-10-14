@@ -13,6 +13,11 @@ import Orders from "./pages/orders/Orders";
 import Messages from "./pages/messages/Messages";
 import Message from "./pages/message/Message";
 import MyGigs from "./pages/myGigs/MyGigs";
+import Contact from "./pages/Contact/contact";
+import Privacy from "./pages/Privacy/Privacy";
+import Terms from "./pages/Terms/Terms";
+import Help from "./pages/Help/Help";
+import Trust from "./pages/Trust/Trust";
 import {
   QueryClient,
   QueryClientProvider,
@@ -20,8 +25,6 @@ import {
 import Pay from "./pages/pay/Pay";
 import Success from "./pages/success/Success";
 import Verify from "./pages/verify/Verify";
-
-
 
 function App() {
   const queryClient = new QueryClient();
@@ -95,11 +98,30 @@ function App() {
           path: "/success",
           element: <Success />,
         },
+        {
+          path: "/Contact",
+          element: <Contact />,
+        },
+        {
+          path: "/Privacy",
+          element: <Privacy />,
+        },
+        {
+          path: "/Terms",
+          element: <Terms />,
+        },
+        {
+          path: "/Help",
+          element: <Help />,
+        },
+        {
+          path: "/Trust",
+          element: <Trust />
+        }
       ],
     },
   ]);
 
   return <RouterProvider router={router} />;
 }
-
 export default App;

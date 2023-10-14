@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.scss";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 function Footer() {
   return (
@@ -8,15 +9,24 @@ function Footer() {
         <div className="top">
           <div className="item">
             <h2>About</h2>
+            <Link className="link"to="/privacy">
             <span>Privacy Policy</span>
+            </Link>
+            <Link className="link"to="/Terms">
             <span>Terms of Service</span>
+            </Link>
+            <Link className="link"to="/Contact">
             <span>Contact Us</span>
-            <span></span>
+            </Link>
           </div>
           <div className="item">
             <h2>Support</h2>
+            <Link className="link"to="/Help">
             <span>Help & Support</span>
+            </Link>
+            <Link className="link"to="/Trust">
             <span>Trust & Safety</span>
+            </Link>
             <span>Selling on Protechgig</span>
             <span>Buying on Protechgig</span>
           </div>
