@@ -1,5 +1,4 @@
 import PuffLoader from "react-spinners/PuffLoader";
-
 import React from 'react'
 
 const Spinner = () => {
@@ -13,5 +12,4 @@ const Spinner = () => {
     </div>
   )
 };
-
 export default Spinner;
