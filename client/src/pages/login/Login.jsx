@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Login.scss";
 import newRequest from "../../utils/newRequest";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { enqueueSnackbar } from "notistack";
 import Spinner from "../../components/Spinner";
 
@@ -47,6 +47,8 @@ function Login() {
           type="password"
           onChange={(e) => setPassword(e.target.value)}
         />
+        {/* <p>Forgot Password?</p> */}
+        <Link className="link" to="/forgot-password">Forgot Password?</Link>
         <button type="submit">{loading ? <Spinner /> : 'Login'}</button>
         {error && error}
       </form>
