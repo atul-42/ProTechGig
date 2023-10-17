@@ -91,31 +91,31 @@ function Navbar() {
         <>
           <hr />
           <div className="menu">
-          <Link className="link menuLink" to="/">
+          <Link className="link menuLink" to="/gigs?cat=web">
               Website Developers
             </Link>
-            <Link className="link menuLink" to="/">
+            <Link className="link menuLink" to="/gigs?cat=app">
               App Craftsmen
             </Link>
-            <Link className="link menuLink" to="/">
+            <Link className="link menuLink" to="/gigs?cat=game">
               Game Creators
             </Link>
-            <Link className="link menuLink" to="/">
+            <Link className="link menuLink" to="/gigs?cat=ai">
               AI Visionaries
             </Link>
-            <Link className="link menuLink" to="/">
+            <Link className="link menuLink" to="/gigs?cat=data">
               Data Analyst
             </Link>
-            <Link className="link menuLink" to="/">
+            <Link className="link menuLink" to="/gigs?cat=uix">
               UI/UX Developers
             </Link>
-            <Link className="link menuLink" to="/">
+            <Link className="link menuLink" to="/gigs?cat=dev">
               DevOPs Engineers
             </Link>
-            <Link className="link menuLink" to="/">
+            <Link className="link menuLink" to="/gigs?cat=cloud">
               Cloud Wizards
             </Link>
-            <Link className="link menuLink" to="/">
+            <Link className="link menuLink" to="/gigs?cat=cyber">
               Cyber Guardians
             </Link>
           </div>

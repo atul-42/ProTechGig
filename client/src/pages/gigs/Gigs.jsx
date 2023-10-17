@@ -3,7 +3,7 @@ import "./Gigs.scss";
 import GigCard from "../../components/gigCard/GigCard";
 import { useQuery } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
-import { useLocation } from "react-router-dom";
+import { useLocation, useSearchParams } from "react-router-dom";
 
 function Gigs() {
   const [sort, setSort] = useState("sales");
@@ -39,14 +39,28 @@ function Gigs() {
     refetch();
   };
   // console.log(data);
+
+  const heading = {
+    web: "Website Developers",
+    app: "App Craftsmen",
+    game: "Game Creators",
+    ai:"AI Visionaries",
+    data:"Data Analyst",
+    uix:"UI/UX Developers",
+    dev:"DevOPs Engineers",
+    cloud:"Cloud Wizards",
+    cyber:"Cyber Guardians",
+    soft:"Software Builders",
+  }
+
+  // const [searchParams] = useSearchParams(window.location.search);
+  const location = useLocation();
+  console.log(location.search)
+
   return (
     <div className="gigs">
       <div className="container">
-        <span className="breadcrumbs">Liverr Graphics & Design </span>
-        <h1>AI Artists</h1>
-        <p>
-          Explore the boundaries of art and technology with Liverr's AI artists
-        </p>
+        <h1>{}</h1>
         <div className="menu">
           <div className="left">
             <span>Budget</span>

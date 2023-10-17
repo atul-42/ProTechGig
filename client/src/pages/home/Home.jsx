@@ -5,6 +5,7 @@ import Slide from "../../components/slide/Slide";
 import CatCard from "../../components/catCard/CatCard";
 import ProjectCard from "../../components/projectCard/ProjectCard";
 import { cards, projects } from "../../data";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -23,7 +24,11 @@ function Home() {
             <div className="item">
               <img src="./img/world-wide-web.png" alt="exp" />
               <div className="line"></div>
-              <span>Website Developers</span>
+              <span>
+                <Link className="link menuLink" to="/gigs?cat=web">
+                Website Developers
+                </Link>
+            </span>
             </div>
             <div className="item">
               <img
@@ -32,7 +37,11 @@ function Home() {
               />
               <div className="line"></div>
 
-              <span>App Craftsmen</span>
+              <span>
+                <Link className="link menuLink" to="/gigs?cat=app">
+                App Craftsmen
+                </Link>
+              </span>
             </div>
             <div className="item">
               <img
@@ -40,7 +49,9 @@ function Home() {
                 alt=""
               />
               <div className="line"></div>
-              <span>Game Creators</span>
+              <span><Link className="link menuLink" to="/gigs?cat=game">
+              Game Creators
+            </Link></span>
             </div>
             <div className="item">
               <img
@@ -48,7 +59,9 @@ function Home() {
                 alt=""
               />
               <div className="line"></div>
-              <span>AI Visionaries</span>
+              <span><Link className="link menuLink" to="/gigs?cat=ai">
+              AI Visionaries
+            </Link></span>
             </div>
             <div className="item">
               <img
@@ -56,7 +69,9 @@ function Home() {
                 alt=""
               />
               <div className="line"></div>
-              <span>Data Analyst</span>
+              <span><Link className="link menuLink" to="/gigs?cat=data">
+              Data Analyst
+            </Link></span>
             </div>
             <div className="item">
               <img
@@ -64,7 +79,9 @@ function Home() {
                 alt=""
               />
               <div className="line"></div>
-              <span>UI/UX Developers</span>
+              <span><Link className="link menuLink" to="/gigs?cat=uix">
+              UI/UX Developers
+            </Link></span>
             </div>
             <div className="item">
               <img
@@ -72,7 +89,9 @@ function Home() {
                 alt=""
               />
               <div className="line"></div>
-              <span>DevOps Engineers</span>
+              <span><Link className="link menuLink" to="/gigs?cat=dev">
+              DevOPs Engineers
+            </Link></span>
             </div>
             <div className="item">
               <img
@@ -80,7 +99,9 @@ function Home() {
                 alt=""
               />
               <div className="line"></div>
-              <span>Cloud Wizards</span>
+              <span><Link className="link menuLink" to="/gigs?cat=cloud">
+              Cloud Wizards
+            </Link></span>
             </div>
             <div className="item">
               <img
@@ -88,7 +109,9 @@ function Home() {
                 alt=""
               />
               <div className="line"></div>
-              <span>Cyber Guardians</span>
+              <span><Link className="link menuLink" to="/gigs?cat=cyber">
+              Cyber Guardians
+            </Link></span>
             </div>
             <div className="item">
               <img
