@@ -18,6 +18,9 @@ import Privacy from "./pages/Privacy/Privacy";
 import Terms from "./pages/Terms/Terms";
 import Help from "./pages/Help/Help";
 import Trust from "./pages/Trust/Trust";
+import Ss from "./pages/ss/Ss";
+import Ch from "./pages/CommunityHub/Communityhub";
+
 import {
   QueryClient,
   QueryClientProvider,
@@ -117,7 +120,15 @@ function App() {
         {
           path: "/Trust",
           element: <Trust />
-        }
+        },
+        {
+          path: "/ss",
+          element: <Ss />
+        },
+        {
+          path: "/communityhub",
+          element: <Ch />
+        },
       ],
     },
   ]);

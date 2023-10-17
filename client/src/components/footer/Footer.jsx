@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.scss";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
+
 function Footer() {
   return (
     <div className="footer">
@@ -9,32 +10,22 @@ function Footer() {
         <div className="top">
           <div className="item">
             <h2>About</h2>
-            <Link className="link"to="/privacy">
-            <span>Privacy Policy</span>
-            </Link>
-            <Link className="link"to="/Terms">
-            <span>Terms of Service</span>
-            </Link>
-            <Link className="link"to="/Contact">
-            <span>Contact Us</span>
-            </Link>
+            <Link to="/privacy" className="link">About Us</Link>
+            <Link to="/privacy" className="link">Privacy Policy</Link>
+            <Link className="link"to="/Terms">Terms of Service</Link>
+            <Link className="link"to="/Contact">Contact Us</Link>    
           </div>
           <div className="item">
             <h2>Support</h2>
-            <Link className="link"to="/Help">
-            <span>Help & Support</span>
-            </Link>
-            <Link className="link"to="/Trust">
-            <span>Trust & Safety</span>
-            </Link>
+            <Link className="link"to="/Help">Help & Support</Link>
+            <Link className="link"to="/Trust">Trust & Safety</Link>
             <span>Selling on Protechgig</span>
             <span>Buying on Protechgig</span>
           </div>
           <div className="item">
             <h2>Community</h2>
-            <span>Customer Success Stories</span>
-            <span>Community hub</span>
-            <span>Forum</span>
+            <Link className="link"to="/ss">Customer Success Stories</Link>
+            <Link className="link"to="/communityhub">Community Hub</Link>
             <span>Events</span>
           </div>
         </div>
