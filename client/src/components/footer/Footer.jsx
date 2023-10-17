@@ -39,9 +39,18 @@ function Footer() {
           </div>
           <div className="item">
             <h2>Community</h2>
-            <Link className="link"to="/ss">Customer Success Stories</Link>
-            <Link className="link"to="/communityhub">Community Hub</Link>
+            <Link className="link"to="/Story">
+            <span>Customer Success Stories</span>
+            </Link>
+            <Link className="link"to="/Hub">
+            <span>Community Hub</span>
+            </Link>
+            <Link className="link"to="/Standards">
+            <span>Community Standards</span>
+            </Link>
+            <Link className="link"to="/Events">
             <span>Events</span>
+            </Link>
           </div>
         </div>
         <hr />

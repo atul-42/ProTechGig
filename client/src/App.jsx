@@ -18,6 +18,14 @@ import Privacy from "./pages/Privacy/Privacy";
 import Terms from "./pages/Terms/Terms";
 import Help from "./pages/Help/Help";
 import Trust from "./pages/Trust/Trust";
+import About from "./pages/About/About";
+import Story from "./pages/Community/Story/Story";
+import Hub from "./pages/Community/Hub/Hub";
+import Events from "./pages/Community/Story/Story";
+import Standards from "./pages/Community/Standards/Standards";
+import Job from "./pages/Job/Job";
+import Selling from "./pages/Selling/Selling";
+import Buying from "./pages/Buying/Buying";
 import {
   QueryClient,
   QueryClientProvider,
@@ -27,8 +35,6 @@ import Success from "./pages/success/Success";
 import Verify from "./pages/verify/Verify";
 import Forpwd from "./components/forpwd/Forpwd";
 import Reset from "./pages/reset/Reset";
-
-
 
 function App() {
   const queryClient = new QueryClient();
@@ -129,6 +135,36 @@ function App() {
         {
           path: "/Trust",
           element: <Trust />
+        },
+        {
+          path: "/About",
+          element: <About />
+        },        {
+          path: "/Story",
+          element: <Story />
+        },
+        {
+          path: "/Hub",
+          element: <Hub />
+        },        {
+          path: "/Standards",
+          element: <Standards />
+        },
+        {
+          path: "/Events",
+          element: <Events />
+        },
+        {
+          path: "/Job",
+          element: <Job />
+        },
+        {
+          path: "/Selling",
+          element: <Selling />
+        },
+        {
+          path: "/Buying",
+          element: <Buying />
         }
       ],
     },
@@ -136,5 +172,4 @@ function App() {
 
   return <RouterProvider router={router} />;
 }
-
 export default App;
