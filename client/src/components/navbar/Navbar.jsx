@@ -45,7 +45,9 @@ function Navbar() {
           </Link>
         </div>
         <div className="links">
-          <span>Post a Job</span>
+        <Link className="link" to="/Job">
+            <span className="text">Post A Job</span>
+        </Link>
           {!currentUser?.isSeller && <span>Become a Seller</span>}
           {currentUser ? (
             <div className="user" onClick={() => setOpen(!open)}>

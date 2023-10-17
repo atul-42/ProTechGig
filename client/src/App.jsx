@@ -18,9 +18,14 @@ import Privacy from "./pages/Privacy/Privacy";
 import Terms from "./pages/Terms/Terms";
 import Help from "./pages/Help/Help";
 import Trust from "./pages/Trust/Trust";
-import Ss from "./pages/ss/Ss";
-import Ch from "./pages/CommunityHub/Communityhub";
-
+import About from "./pages/About/About";
+import Story from "./pages/Community/Story/Story";
+import Hub from "./pages/Community/Hub/Hub";
+import Events from "./pages/Community/Story/Story";
+import Standards from "./pages/Community/Standards/Standards";
+import Job from "./pages/Job/Job";
+import Selling from "./pages/Selling/Selling";
+import Buying from "./pages/Buying/Buying";
 import {
   QueryClient,
   QueryClientProvider,
@@ -122,13 +127,35 @@ function App() {
           element: <Trust />
         },
         {
-          path: "/ss",
-          element: <Ss />
+          path: "/About",
+          element: <About />
+        },        {
+          path: "/Story",
+          element: <Story />
         },
         {
-          path: "/communityhub",
-          element: <Ch />
+          path: "/Hub",
+          element: <Hub />
+        },        {
+          path: "/Standards",
+          element: <Standards />
         },
+        {
+          path: "/Events",
+          element: <Events />
+        },
+        {
+          path: "/Job",
+          element: <Job />
+        },
+        {
+          path: "/Selling",
+          element: <Selling />
+        },
+        {
+          path: "/Buying",
+          element: <Buying />
+        }
       ],
     },
   ]);
