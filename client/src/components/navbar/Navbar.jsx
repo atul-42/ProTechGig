@@ -48,7 +48,7 @@ function Navbar() {
         <Link className="link" to="/Job">
             <span className="text">Post A Job</span>
         </Link>
-          {!currentUser?.isSeller && <span>Become a Seller</span>}
+          {!currentUser?.isSeller && <span></span>}
           {currentUser ? (
             <div className="user" onClick={() => setOpen(!open)}>
               <img src={currentUser.img || "/img/noavatar.jpg"} alt="" />
