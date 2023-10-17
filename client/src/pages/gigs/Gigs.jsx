@@ -53,14 +53,13 @@ function Gigs() {
     soft:"Software Builders",
   }
 
-  // const [searchParams] = useSearchParams(window.location.search);
-  const location = useLocation();
-  console.log(location.search)
+  const [searchParams] = useSearchParams();
+  const cat = searchParams.get('cat');
 
   return (
     <div className="gigs">
       <div className="container">
-        <h1>{}</h1>
+        <h1>{heading[cat]}</h1>
         <div className="menu">
           <div className="left">
             <span>Budget</span>
