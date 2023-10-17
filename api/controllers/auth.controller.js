@@ -3,6 +3,7 @@ import createError from "../utils/createError.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import sendMail from "../utils/sendMail.js";
+import srm from "../utils/srm.js";
 
 export const register = async (req, res, next) => {
   try {
@@ -53,11 +54,38 @@ export const login = async (req, res, next) => {
   }
 };
 
-export const verifyEmail = async (req, res) => {
+export const verifyEmail = async (req, res, next) => {
   try{
     const {id} = req.body;
     await User.updateOne({_id:id}, { $set: { isVerified: true }});
     res.status(201).send("Email verified");
+  }catch(err){
+    console.log(err);
+    next(err);
+  }
+}
+
+export const srmail = async (req, res, next) => {
+  try{
+    let user = await User.findOne({ username: req.body.username });
+    if(!user) user = await User.findOne({email: req.body.username});
+    if(!user) return next(createError(404, "User does not exist"))
+
+    await srm(user.username, user.email, user._id)
+    res.status(201).send("Email sent");
+    
+  }catch(err){
+    console.log(err);
+    next(err);
+  }
+}
+
+export const reset = async (req, res, next) => {
+  try{
+    const {id, pass} = req.body;
+    const hash = bcrypt.hashSync(pass, 5);
+    await User.updateOne({_id:id}, { $set: { password: hash }});
+    res.status(201).send("Password reset");
   }catch(err){
     console.log(err);
     next(err);
