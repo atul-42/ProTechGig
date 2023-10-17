@@ -1,19 +1,20 @@
 import React, { useState } from "react";
-import "./Contact.scss";
+import "./Job.scss";
 import { useNavigate } from "react-router-dom";
 
-function Contact() {
+function Job() {
   const [file, setFile] = useState(null);
   const [user, setUser] = useState({
     name: "",
     email: "",
     phone: "",
+    domain: "",
     subject: "",
+    Special: "",
     desc: "",
   });
 
   const navigate = useNavigate();
-
   const handleChange = (e) => {
     setUser((prev) => {
       return { ...prev, [e.target.name]: e.target.value };
@@ -25,10 +26,10 @@ function Contact() {
 
   };
   return (
-    <div className="contact">
+    <div className="job">
       <form onSubmit={handleSubmit}>
         <div className="left">
-          <h1>Contact us</h1>
+          <h1>Post A Job</h1>
           <label htmlFor="">Name</label>
           <input
             name="name"
@@ -43,6 +44,13 @@ function Contact() {
             placeholder="Email address"
             onChange={handleChange}
           />
+          <label htmlFor="">Phone Number</label>
+          <input
+            name="phone"
+            type="text"
+            placeholder="+1 234 567 89"
+            onChange={handleChange}
+          />
           <label htmlFor="">Subject</label>
           <input
             name="subject"
@@ -53,16 +61,23 @@ function Contact() {
           <button type="submit">Submit</button>
         </div>
         <div className="right">
-          <label htmlFor="">Phone Number</label>
+        <label htmlFor="">Domain</label>
           <input
-            name="phone"
+            name="domain"
             type="text"
-            placeholder="+1 234 567 89"
+            placeholder="Enter the domain"
+            onChange={handleChange}
+          />
+          <label htmlFor="">Special Requirements</label>
+          <input
+            name="special"
+            type="text"
+            placeholder="(if any)"
             onChange={handleChange}
           />
           <label htmlFor="">Description</label>
           <textarea
-            placeholder="Drop your suggestions/ queries here.."
+            placeholder="Provide a brief description.."
             name="desc"
             id=""
             cols="30"
@@ -74,4 +89,4 @@ function Contact() {
     </div>
   );
 }
-export default Contact;
+export default Job;

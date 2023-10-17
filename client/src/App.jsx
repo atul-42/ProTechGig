@@ -13,6 +13,11 @@ import Orders from "./pages/orders/Orders";
 import Messages from "./pages/messages/Messages";
 import Message from "./pages/message/Message";
 import MyGigs from "./pages/myGigs/MyGigs";
+import Contact from "./pages/Contact/contact";
+import Privacy from "./pages/Privacy/Privacy";
+import Terms from "./pages/Terms/Terms";
+import Help from "./pages/Help/Help";
+import Trust from "./pages/Trust/Trust";
 import {
   QueryClient,
   QueryClientProvider,
@@ -105,6 +110,26 @@ function App() {
           path: "/success",
           element: <Success />,
         },
+        {
+          path: "/Contact",
+          element: <Contact />,
+        },
+        {
+          path: "/Privacy",
+          element: <Privacy />,
+        },
+        {
+          path: "/Terms",
+          element: <Terms />,
+        },
+        {
+          path: "/Help",
+          element: <Help />,
+        },
+        {
+          path: "/Trust",
+          element: <Trust />
+        }
       ],
     },
   ]);

@@ -9,8 +9,11 @@ function Footer() {
         <div className="top">
           <div className="item">
             <h2>About</h2>
-            <Link className="link"to="/privacy">
-            <span>Privacy Policy</span>
+            <Link className="link"to="/About">
+              <span>About Us</span>
+            </Link>
+            <Link className="link"to="/Privacy">
+              <span>Privacy Policy</span>
             </Link>
             <Link className="link"to="/Terms">
             <span>Terms of Service</span>
@@ -27,14 +30,17 @@ function Footer() {
             <Link className="link"to="/Trust">
             <span>Trust & Safety</span>
             </Link>
-            <span>Selling on Protechgig</span>
-            <span>Buying on Protechgig</span>
+            <Link className="link"to="/Selling">
+            <span>Selling on ProTechGig</span>
+            </Link>
+            <Link className="link"to="/Buying">
+            <span>Buying on ProTechGig</span>
+            </Link>
           </div>
           <div className="item">
             <h2>Community</h2>
-            <span>Customer Success Stories</span>
-            <span>Community hub</span>
-            <span>Forum</span>
+            <Link className="link"to="/ss">Customer Success Stories</Link>
+            <Link className="link"to="/communityhub">Community Hub</Link>
             <span>Events</span>
           </div>
         </div>

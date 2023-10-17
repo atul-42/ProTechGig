@@ -7,10 +7,13 @@ function CatCard({ card }) {
     <Link to={`/gigs?cat=${card.cat}`}>
       <div className="catCard">
         <img src={card.img} alt="" />
-        <span className="desc">{card.desc}</span>
-        <span className="title">{card.title}</span>
+        <div className="card-info">
+          <span className="desc">{card.desc}</span>
+          <span className="title">{card.title}</span>
+        </div>
       </div>
     </Link>
   );
 }
+
 export default CatCard;

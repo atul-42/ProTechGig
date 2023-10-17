@@ -1,5 +1,5 @@
 .featured {
-  height: 600px;
+  height: 680px;
   display: flex;
   justify-content: center;
   background-color: #0d084d;
@@ -56,7 +56,7 @@
           width: 120px;
           height: 50px;
           border: none;
-          background-color: #0d084d;
+          background-color: #877cf9;
           color: white;
           align-self: flex-end;
           cursor: pointer;
@@ -87,8 +87,10 @@
     .right {
       height: 100%;
       img {
+        
+        width: 800px;
         height: 100%;
-        object-fit: contain;
+        
       }
     }
   }
