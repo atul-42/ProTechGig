@@ -68,7 +68,7 @@ export const projects = [
   {
     id: 2,
     img: "./img/cloudcom.jpg",
-    pp: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    pp: "./img/atul.jpeg",
     cat: "Cloud Engineer",
     username: "Atul Prasad",
   },
