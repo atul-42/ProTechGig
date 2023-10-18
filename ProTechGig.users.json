@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "652e924fcaa810a84c17e201"
+  },
+  "username": "Anjali",
+  "email": "anjali20112011@gmail.com",
+  "password": "$2b$05$/30LWuonE0ehWTa2k66U8e.XWJ5xAgVUxSoY5Nb23hNw6eJsI7OL6",
+  "img": "http://res.cloudinary.com/dxckiulum/image/upload/v1697550927/fiverr/rhylw0nttlxv3m3kvwsa.jpg",
+  "country": "India",
+  "phone": "1234567890",
+  "desc": "anjali",
+  "isSeller": true,
+  "isVerified": true,
+  "createdAt": {
+    "$date": "2023-10-17T13:55:27.277Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-17T17:22:59.128Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "652ec5bc7a9f90430acf816f"
+  },
+  "username": "Aakash",
+  "email": "aakashpawar496@gmail.com",
+  "password": "$2b$05$skZ6SgWR.9d3BwNAx0BAXe78mDFSFqx3NWf5vdJJMd1uny7Zjd71.",
+  "img": "http://res.cloudinary.com/dxckiulum/image/upload/v1697564092/fiverr/gb1aefw5dw0ris1almfl.jpg",
+  "country": "India",
+  "phone": "09409494849",
+  "desc": "Aakash Pawar",
+  "isSeller": true,
+  "isVerified": true,
+  "createdAt": {
+    "$date": "2023-10-17T17:34:52.414Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-18T09:11:08.456Z"
+  },
+  "__v": 0
+}]
