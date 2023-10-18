@@ -5,11 +5,14 @@ import upload from "../../utils/upload";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
 import { useNavigate } from "react-router-dom";
+// import Spinner from "../../components/Spinner";
+// import { enqueueSnackbar } from "notistack";
 
 const Add = () => {
   const [singleFile, setSingleFile] = useState(undefined);
   const [files, setFiles] = useState([]);
   const [uploading, setUploading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
   const [state, dispatch] = useReducer(gigReducer, INITIAL_STATE);
 
@@ -68,7 +71,14 @@ const Add = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    try{
     mutation.mutate(state);
+    // enqueueSnackbar("Successfully created new gig", { variant: 'success' });
+    }catch(err){
+      console.log(err);
+      // setLoading(false);
+      // enqueueSnackbar("An error occured while creating new gig. Please try again later!", { variant: 'error' });
+    }
     // navigate("/mygigs")
   };
 
