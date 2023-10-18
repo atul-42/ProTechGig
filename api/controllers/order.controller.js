@@ -9,10 +9,11 @@ export const intent = async (req, res, next) => {
 
   const paymentIntent = await stripe.paymentIntents.create({
     amount: gig.price * 100,
-    currency: "usd",
+    currency: "inr",
     automatic_payment_methods: {
       enabled: true,
     },
+    // description: "Created by stripe.com/docs demo",
   });
 
   const newOrder = new Order({
