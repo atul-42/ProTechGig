@@ -2,6 +2,10 @@ import React from 'react';
 import './Buying.scss';
 
 const Buying = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', 
+  });
   return (
     <div className="buying">
       <h1>Buying on ProTechGig</h1>

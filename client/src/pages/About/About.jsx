@@ -1,7 +1,13 @@
 import React from 'react';
 import './About.scss';
 
-const About = () => {
+const About = () =>
+{
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', 
+  });
+
   return (
     <div className="about">
       <div className="center-box">

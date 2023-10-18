@@ -2,6 +2,10 @@ import React from 'react';
 import './Trust.scss';
 
 const Trust = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', 
+  });
   return (
     <div className="Trust">
       <h1>Trust and Safety at ProTechGig</h1>

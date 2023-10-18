@@ -46,9 +46,9 @@ function Navbar() {
         </div>
         <div className="links">
         <Link className="link" to="/Job">
-            <span className="text">Post A Job</span>
+            
         </Link>
-          {!currentUser?.isSeller && <span>Become a Seller</span>}
+          {!currentUser?.isSeller && <span></span>}
           {currentUser ? (
             <div className="user" onClick={() => setOpen(!open)}>
               <img src={currentUser.img || "/img/noavatar.jpg"} alt="" />
@@ -58,7 +58,7 @@ function Navbar() {
                   {currentUser.isSeller && (
                     <>
                       <Link className="link" to="/mygigs">
-                        Gigs
+                        My Gigs
                       </Link>
                       <Link className="link" to="/add">
                         Add New Gig

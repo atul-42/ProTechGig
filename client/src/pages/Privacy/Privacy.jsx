@@ -2,6 +2,10 @@ import React from 'react';
 import './Privacy.scss';
 
 const Privacy = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', 
+  });
   return (
     <div className="privacy">
       <h1>Privacy Policy for ProTechGig</h1>
