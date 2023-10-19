@@ -2,6 +2,10 @@ import React from 'react';
 import './Terms.scss';
 
 const Terms = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', 
+  });
   return (
     <div className="Terms">
       <h1>Terms and Conditions</h1>

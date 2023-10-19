@@ -10,7 +10,6 @@ import reviewRoute from "./routes/review.route.js";
 import authRoute from "./routes/auth.route.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
-import helmet from "helmet";
 
 const app = express();
 dotenv.config({path:'./config.env'});

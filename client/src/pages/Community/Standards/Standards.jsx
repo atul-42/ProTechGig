@@ -2,6 +2,10 @@ import React from 'react';
 import './Standards.scss';
 
 const Standards = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', 
+  });
   return (
     <div className="about">
       <div className="center-box">

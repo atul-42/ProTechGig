@@ -21,7 +21,7 @@ function Featured() {
               <img src="./img/search.png" alt="" />
               <input
                 type="text"
-                placeholder='Try "building mobil app"'
+                placeholder='Try "Game Creators"'
                 onChange={(e) => setInput(e.target.value)}
               />
             </div>

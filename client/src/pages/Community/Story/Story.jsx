@@ -2,6 +2,10 @@ import React from 'react';
 import './Story.scss';
 
 const Story = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', 
+  });
   return (
     <div className="Story">
       <div className="center-box">

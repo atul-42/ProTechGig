@@ -2,6 +2,10 @@ import React from 'react';
 import './Help.scss';
 
 const Help = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth', 
+      });
   return (
     <div className="Help">
       <h1>Help & Support</h1>

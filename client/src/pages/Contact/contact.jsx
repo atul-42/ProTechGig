@@ -3,6 +3,10 @@ import "./Contact.scss";
 import { useNavigate } from "react-router-dom";
 
 function Contact() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', 
+  });
   const [file, setFile] = useState(null);
   const [user, setUser] = useState({
     name: "",
@@ -57,7 +61,7 @@ function Contact() {
           <input
             name="phone"
             type="text"
-            placeholder="+1 234 567 89"
+            placeholder="+91 9898787975"
             onChange={handleChange}
           />
           <label htmlFor="">Description</label>

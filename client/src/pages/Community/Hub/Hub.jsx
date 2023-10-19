@@ -2,6 +2,10 @@ import React from 'react';
 import './Hub.scss';
 
 const Hub = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', 
+  });
   return (
     <div className="events">
       <div className="center-box">

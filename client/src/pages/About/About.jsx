@@ -1,7 +1,13 @@
 import React from 'react';
 import './About.scss';
 
-const About = () => {
+const About = () =>
+{
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', 
+  });
+
   return (
     <div className="about">
       <div className="center-box">
@@ -39,11 +45,3 @@ export default About;
 
 
 
-
-
-{/* <p>
-ProTechGig is a platform that connects talented freelancers with clients seeking top-notch
-services.<br />
-Our mission is to empower freelancers and businesses to collaborate effectively
-in the digital age.
-</p> */}
