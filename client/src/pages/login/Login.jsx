@@ -4,7 +4,7 @@ import newRequest from "../../utils/newRequest";
 import { Link, useNavigate } from "react-router-dom";
 import { enqueueSnackbar } from "notistack";
 import Spinner from "../../components/Spinner";
-
+import Cookies from 'js-cookie';
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -19,6 +19,15 @@ function Login() {
     try {
       const res = await newRequest.post("/auth/login", { username, password });
       localStorage.setItem("currentUser", JSON.stringify(res.data));
+      
+      console.log(res);
+      // const token = res.data.accessToken;
+      const accessToken = Cookies.get('accessToken');
+      console.log(`accessToken: ${accessToken}`);
+      // const accessToken = Cookies.get('accessToken');
+      const cookies = document.cookie;
+      console.log(cookies);
+
       setLoading(false);
       navigate("/")
       enqueueSnackbar("Successfully logged in", { variant: 'success' });

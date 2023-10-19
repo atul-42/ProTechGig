@@ -46,6 +46,7 @@ export const login = async (req, res, next) => {
     res
       .cookie("accessToken", token, {
         httpOnly: true,
+        domain: "localhost",
       })
       .status(200)
       .send(info);

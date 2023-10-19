@@ -11,7 +11,7 @@ const srm = (username, email, id) => {
     });
 
     const info = transporter.sendMail({
-        from: 'rnks789@gmail.com',
+        from: 'protechgig@gmail.com',
         to: email,
         subject: "For Password Reset",
         html: '<p>Hello ' + username + ', Welcome to ProTechGig.</p><br><br>Please click here to <a href="http://localhost:5173/reset?id='+id+'"> Reset </a> your password. </p>',

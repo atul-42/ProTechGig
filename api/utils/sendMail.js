@@ -1,4 +1,3 @@
-// const nodemailer = require('nodemailer')
 import nodemailer from 'nodemailer'
 
 const sendMail = (username, email, id) => {
@@ -12,10 +11,9 @@ const sendMail = (username, email, id) => {
     });
 
     const info = transporter.sendMail({
-        from: 'rnks789@gmail.com',
+        from: 'protechgig@gmail.com',
         to: email,
         subject: "For Email Verification",
-        // html: '<p>Hello ' + username + ', Welcome to ProTechGig.</p><br><br>Please click here to <a href="http://localhost:5173/verify?id='+id+'"> Verify </a> your email. </p>',
         html: '<p>Hello ' + username + ', Welcome to ProTechGig.</p><br><br>Please click here to <a href="http://localhost:5173/verify?id='+id+'"> Verify </a> your email. </p>',
     });
 

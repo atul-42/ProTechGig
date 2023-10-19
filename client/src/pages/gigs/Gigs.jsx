@@ -8,13 +8,14 @@ import { useLocation, useSearchParams } from "react-router-dom";
 function Gigs() {
   const [sort, setSort] = useState("sales");
   const [open, setOpen] = useState(false);
+  const [cat, setCat] = useState('');
   const minRef = useRef();
   const maxRef = useRef();
 
   const { search } = useLocation();
 
   const { isLoading, error, data, refetch } = useQuery({
-    queryKey: ["gigs"],
+    queryKey: ["gigs", cat],
     queryFn: () =>
       newRequest
         .get(
@@ -54,7 +55,12 @@ function Gigs() {
   }
 
   const [searchParams] = useSearchParams();
-  const cat = searchParams.get('cat');
+
+  useEffect(() => {
+    const category = searchParams.get('cat');
+    setCat(category);
+    
+  }, [searchParams]);
 
   return (
     <div className="gigs">
