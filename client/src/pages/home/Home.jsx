@@ -39,7 +39,7 @@ function Home() {
 
               <span>
                 <Link className="link menuLink" to="/gigs?cat=app">
-                App Craftsmen
+                App Developers
                 </Link>
               </span>
             </div>

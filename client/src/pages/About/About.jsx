@@ -45,11 +45,3 @@ export default About;
 
 
 
-
-
-{/* <p>
-ProTechGig is a platform that connects talented freelancers with clients seeking top-notch
-services.<br />
-Our mission is to empower freelancers and businesses to collaborate effectively
-in the digital age.
-</p> */}
