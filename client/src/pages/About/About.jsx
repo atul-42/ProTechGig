@@ -1,8 +1,7 @@
 import React from 'react';
 import './About.scss';
 
-const About = () =>
-{
+const About = () => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth', 
@@ -10,38 +9,50 @@ const About = () =>
 
   return (
     <div className="about">
-      <div className="center-box">
-        <div className="about-content">
-          <h2>About Us</h2>
+      <div className="landscape-image">
+        <img src="./img/aboutus.jpg" alt="About Us Landscape" />
+      </div>
+      <div className="about-content">
+        <section>
+          <h2>Welcome to ProTechGig</h2>
           <p>
-            ProTechGig is not just a freelancing platform; we are a thriving community of tech-savvy freelancers and businesses working together to unlock the power of innovation and technology.<br />
-            Here is why you should get to know us:
+            ProTechGig is where tech enthusiasts, freelancers, and individuals come together to shape the future. Our platform is the nexus of innovation, where skills meet opportunities, and where businesses and individuals find the talent they need to succeed.
           </p>
+        </section>
+        <section>
+          <h2>Our Mission</h2>
           <p>
-            <ul>
-              <li>Tech Enthusiasts Unite: We are a hub for tech enthusiasts, from developers to designers, cybersecurity experts, and more. Our platform is where their passion meets purpose.</li>
-              <li>Connecting Talent and Opportunity: ProTechGig is all about matching top tech talent with businesses in need of their expertise. We bridge the gap between opportunity and skill.</li>
-              <li>Global Network: We are not bound by borders. Our community spans the globe, connecting talent from different corners of the world with clients from various industries.</li>
-              <li>Quality and Trust: We value quality, security, and trust. Our robust screening and vetting processes ensure that clients can rely on the freelancers they hire.</li>
-              <li>Innovation and Creativity: We celebrate innovation and creativity. Our freelancers are not just task-doers; they are problem solvers and idea generators.</li>
-              <li>Client-Centric Approach: Your success is our priority. We work closely with clients to understand their needs, goals, and expectations.</li>
-              <li>Innovation Ecosystem: ProTechGig is more than just a freelancing platform; it  is an innovation ecosystem where talented individuals and businesses can collaborate, learn, and grow.</li>
-              <li>Support and Community: We provide resources, support, and a thriving community where freelancers and clients can learn, grow, and succeed together.</li>
-            </ul>
+            At ProTechGig, our mission is to empower tech geeks to thrive. We're here to break barriers, connect talent with demand, and create a dynamic ecosystem that drives growth and innovation. We believe that every idea can change the world, and every freelancer can find their dream project.
           </p>
-
+        </section>
+        <section>
+          <h2>Why ProTechGig?</h2>
           <p>
-          Join the ProTechGig community today and experience a freelancing platform that is as passionate about technology as you are.
-          <br />Whether you are a freelancer looking to take your career to the next level or a business seeking tech solutions, ProTechGig has you covered.
-          <br />
-          Contact Us to learn more about our platform and how we can help you achieve your goals in the tech world.
+            With a passionate community, a user-friendly interface, and a commitment to excellence, we've created a space that fosters collaboration and empowers you to achieve your goals. Whether you're a freelancer showcasing your skills or an individual looking for the perfect gig, ProTechGig has you covered.
           </p>
-        </div>
+        </section>
+        <section>
+          <h2>Our Team</h2>
+          <p>
+            Meet the dedicated team behind ProTechGig. We're tech enthusiasts, developers, designers, and entrepreneurs with a shared vision of making the gig economy more accessible and efficient. Our collective experience and expertise drive us to continually improve and enhance your experience on our platform. We are committed to providing exceptional support, ensuring that ProTechGig remains a trusted and reliable platform for all users.
+          </p>
+        </section>
+        <section>
+          <h2>Our Vision</h2>
+          <p>
+            ProTechGig envisions a future where every tech enthusiast can find their place, and every project can find its perfect match. We aspire to be the leading platform that promotes diversity, inclusivity, and opportunities in the tech industry. We're not just a website; we're a movement, and we're committed to making tech accessible to all.
+          </p>
+        </section>
+        <section>
+          <h2>Join the ProTechGig Community</h2>
+          <p>
+            Discover a world of opportunity. Whether you're a freelancer seeking exciting projects or an individual in need of tech expertise, ProTechGig is your gateway to a vibrant network of talent and innovation. Join us in shaping the future, as we work together to build a brighter, tech-savvy world.
+          </p>
+        </section>
       </div>
     </div>
   );
 };
+
 export default About;
-
-
 

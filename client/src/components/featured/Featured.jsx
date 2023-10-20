@@ -31,7 +31,7 @@ function Featured() {
             <span>Popular:</span>
             <button onClick={()=>navigate('/gigs?cat=web')}>Web Design</button>
             <button onClick={()=>navigate('/gigs?cat=data')}>Data Analysis</button>
-            <button onClick={()=>navigate('/gigs?cat=web')}>Software Developers</button>
+            <button onClick={()=>navigate('/gigs?cat=soft')}>Software Developers</button>
             <button onClick={()=>navigate('/gigs?cat=cloud')}>Cloud Services</button>
           </div>
         </div>

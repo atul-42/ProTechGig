@@ -1,17 +1,22 @@
 .contact {
+  font-family: "Roboto", sans-serif;
+  background-color: #f1fdf7; // Background color from your home page palette
+  color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
 
   form {
-    width: 960px;
+    max-width: 90%;
     padding: 100px 0px;
     display: flex;
     gap: 120px;
+    flex: 1;
 
     h1 {
-      color: gray;
+      font-size: 28px;
       margin-bottom: 20px;
+      color: #0076b6;
     }
 
     .left,
@@ -23,14 +28,15 @@
       justify-content: space-between;
 
       label {
-        color: gray;
         font-size: 18px;
+        color:  #0076b6;
       }
 
       input,
       textarea {
         padding: 20px;
         border: 1px solid rgb(216, 214, 214);
+        font-size: 20px;
       }
 
       button {

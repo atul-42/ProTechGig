@@ -1,35 +1,37 @@
-.Terms{
-    max-width: 1050px;
-    margin: 0 auto;
-    padding: 24px;
-    font-family: "Montserrat", sans-serif;
-  
-    h1{
-      font-size: 26px;
-      margin-bottom: 20px;
+.terms {
+  font-family: "Roboto", sans-serif;
+  background-color: #f1fdf7; /* Background color from your home page palette */
+  color: #333;
+
+  .landscape-image {
+    img {
+      width: 100%;
+      max-height: 800px;
+      object-fit: cover;
     }
-    i{
-        font-size: 20px;
+  }
+
+  .terms-content {
+    max-width: 100%;
+    padding: 2rem;
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 1rem;
+      color: #0076b6; /* Blue from your home page palette */
     }
-    p{
-        font-size:20px;
-        color: #666;
-    }
-  
-    .section {
-      border: 1px solid #ccc;
-      padding: 20px;
+
+    h2 {
+      font-size: 20px;
+      color: #0076b6; /* Blue from your home page palette */
       margin-top: 20px;
-  
-      h2{
-        font-size: 20px;
-        margin-bottom: 10px;
-      }
-  
-      p{
-        font-size: 20x;
-        line-height: 1.5;
-        margin-bottom: 20px;
-      }
-    }    
-  }  
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.5;
+      color: #333;
+      margin-bottom: 2rem; /* Add spacing between paragraphs */
+    }
+  }
+}

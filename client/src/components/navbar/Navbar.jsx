@@ -95,7 +95,7 @@ function Navbar() {
               Website Developers
             </Link>
             <Link className="link menuLink" to="/gigs?cat=app">
-              App Developers
+              App Craftsmen
             </Link>
             <Link className="link menuLink" to="/gigs?cat=game">
               Game Creators
