@@ -20,7 +20,6 @@ import Help from "./pages/Help/Help";
 import Trust from "./pages/Trust/Trust";
 import About from "./pages/About/About";
 import Story from "./pages/Community/Story/Story";
-import Hub from "./pages/Community/Hub/Hub";
 import Events from "./pages/Community/Story/Story";
 import Standards from "./pages/Community/Standards/Standards";
 import Job from "./pages/Job/Job";
@@ -142,11 +141,8 @@ function App() {
         },        {
           path: "/Story",
           element: <Story />
-        },
+        },        
         {
-          path: "/Hub",
-          element: <Hub />
-        },        {
           path: "/Standards",
           element: <Standards />
         },
