@@ -119,7 +119,9 @@ function Home() {
                 alt=""
               />
               <div className="line"></div>
-              <span>Software Builders</span>
+              <span><Link className="link menuLink" to="/gigs?cat=soft">
+              Software Builders
+            </Link></span>
             </div>
           </div>
         </div>
