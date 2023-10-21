@@ -8,7 +8,6 @@ const VerifySuccess = () => {
   return (
     <div className='top-ver'>
         <h3>Your email id has been successfully verified.</h3>
-        <button className='login-ver' onClick={()=>{navigate('/login')}}>Login Now</button>
     </div>
   )
 }
