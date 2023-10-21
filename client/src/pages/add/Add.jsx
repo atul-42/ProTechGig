@@ -5,6 +5,8 @@ import upload from "../../utils/upload";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
 import { useNavigate } from "react-router-dom";
+import { enqueueSnackbar } from "notistack";
+import Spinner from "../../components/Spinner";
 // import Spinner from "../../components/Spinner";
 // import { enqueueSnackbar } from "notistack";
 
@@ -12,7 +14,7 @@ const Add = () => {
   const [singleFile, setSingleFile] = useState(undefined);
   const [files, setFiles] = useState([]);
   const [uploading, setUploading] = useState(false);
-  // const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const [state, dispatch] = useReducer(gigReducer, INITIAL_STATE);
 
@@ -57,10 +59,16 @@ const Add = () => {
     mutationFn: (gig) => {
       return newRequest.post("/gigs", gig).then((response) => {
         // Handle the successful response here (data is available in response.data)
+        enqueueSnackbar("Successfully created new gig", { variant: 'success' });
+        setLoading(false)
+        // navigate('/add')
+        window.location.reload(false)
         console.log("Response Data:", response.data);
       })
       .catch((error) => {
         // Handle the error here
+        enqueueSnackbar("An error occured while creating new gig. Please try again later!", { variant: 'error' });
+        setLoading(false)
         console.log("Error:", error.response.data);
       });
     },
@@ -70,6 +78,7 @@ const Add = () => {
   });
 
   const handleSubmit = (e) => {
+    setLoading(true);
     e.preventDefault();
     try{
     mutation.mutate(state);
@@ -116,10 +125,12 @@ const Add = () => {
                 <input
                   type="file"
                   onChange={(e) => setSingleFile(e.target.files[0])}
+                  required
                 />
                 <label htmlFor="">Upload Images</label>
                 <input
                   type="file"
+                  required
                   multiple
                   onChange={(e) => setFiles(e.target.files)}
                 />
@@ -137,7 +148,7 @@ const Add = () => {
               rows="16"
               onChange={handleChange}
             ></textarea>
-            <button onClick={handleSubmit}>Create</button>
+            <button onClick={handleSubmit}>{loading ? <Spinner /> :'Create'}</button>
           </div>
           <div className="details">
             <label htmlFor="">Service Title</label>

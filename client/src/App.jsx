@@ -33,6 +33,8 @@ import Success from "./pages/success/Success";
 import Verify from "./pages/verify/Verify";
 import Forpwd from "./components/forpwd/Forpwd";
 import Reset from "./pages/reset/Reset";
+import Admin from "./pages/admin/Admin";
+
 
 function App() {
   const queryClient = new QueryClient();
@@ -157,7 +159,11 @@ function App() {
         {
           path: "/Buying",
           element: <Buying />
-        }
+        },
+        {
+          path: "/admin",
+          element: <Admin />
+        },
       ],
     },
   ]);
