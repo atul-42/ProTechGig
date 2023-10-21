@@ -42,14 +42,13 @@ const Orders = () => {
         "Error loading data."
       ) : (
         <div className="container">
-          <img className="landscape-image" src="./img/orders.jpg" alt="Landscape" />
-
+          <h1>Your Orders</h1>
           <table>
             <thead>
               <tr>
                 <th>Image</th>
                 <th>Title</th>
-                <th>Price</th>
+                <th>Price(in Rs)</th>
                 <th>Contact</th>
               </tr>
             </thead>

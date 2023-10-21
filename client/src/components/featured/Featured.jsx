@@ -32,7 +32,7 @@ function Featured() {
             <button onClick={()=>navigate('/gigs?cat=web')}>Web Design</button>
             <button onClick={()=>navigate('/gigs?cat=data')}>Data Analysis</button>
             <button onClick={()=>navigate('/gigs?cat=soft')}>Software Developers</button>
-            <button onClick={()=>navigate('/gigs?cat=cloud')}>Cloud Services</button>
+            <button onClick={()=>navigate('/gigs?cat=cloud')}>Cloud Computing</button>
           </div>
         </div>
         <div className="right">

@@ -41,9 +41,6 @@ function Gig() {
       ) : (
         <div className="container">
           <div className="left">
-            <span className="breadcrumbs">
-              Fiverr {">"} Graphics & Design {">"}
-            </span>
             <h1>{data.title}</h1>
             {isLoadingUser ? (
               "loading"
@@ -99,7 +96,6 @@ function Gig() {
                         </span>
                       </div>
                     )}
-                    <button>Contact Me</button>
                   </div>
                 </div>
                 <div className="box">
@@ -107,18 +103,6 @@ function Gig() {
                     <div className="item">
                       <span className="title">From</span>
                       <span className="desc">{dataUser.country}</span>
-                    </div>
-                    <div className="item">
-                      <span className="title">Member since</span>
-                      <span className="desc">Aug 2022</span>
-                    </div>
-                    <div className="item">
-                      <span className="title">Avg. response time</span>
-                      <span className="desc">4 hours</span>
-                    </div>
-                    <div className="item">
-                      <span className="title">Last delivery</span>
-                      <span className="desc">1 day</span>
                     </div>
                     <div className="item">
                       <span className="title">Languages</span>
@@ -135,7 +119,7 @@ function Gig() {
           <div className="right">
             <div className="price">
               <h3>{data.shortTitle}</h3>
-              <h2>$ {data.price}</h2>
+              <h2>Rs.{data.price}</h2>
             </div>
             <p>{data.shortDesc}</p>
             <div className="details">

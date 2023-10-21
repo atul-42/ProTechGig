@@ -136,7 +136,7 @@ const Add = () => {
                 />
               </div>
               <button onClick={handleUpload}>
-                {uploading ? "uploading" : "Upload"}
+                {uploading ? "uploading" : "Uploaded"}
               </button>
             </div>
             <label htmlFor="">Description</label>
@@ -194,7 +194,7 @@ const Add = () => {
                 </div>
               ))}
             </div>
-            <label htmlFor="">Price</label>
+            <label htmlFor="">Price(in Rs.)</label>
             <input type="number" onChange={handleChange} name="price" />
           </div>
         </div>
