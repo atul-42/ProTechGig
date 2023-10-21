@@ -1,62 +1,3 @@
-export const cards = [
-  {
-    id: 1,
-    title: "Website Developers",
-    desc: "Showcase Your Services & Products",
-    cat: "web",
-    img: "./img/webbb.jpg",
-  },
-  {
-    id: 2,
-    title: "App Craftsmen",
-    desc: "Enhance Your Brand Reputation",
-    cat: "app",
-    img: "./img/app.jpg",
-  },
-  {
-    id: 3,
-    title: "Game Creators",
-    desc: "Turn Imaginations into Reality",
-    cat: "game",
-    img: "./img/game.jpg",
-  },
-  {
-    id: 4,
-    title: "Cyber Guardians",
-    desc: "Secure Your Data from getting Leaked",
-    cat: "cyber",
-    img: "./img/cybersec.jpg",
-  },
-  {
-    id: 5,
-    title: "Data Analyst",
-    desc: "Grow your Business by Analysing the Data",
-    cat: "data",
-    img: "./img/dataa.jpg",
-  },
-  {
-    id: 6,
-    title: "AI Visionaries",
-    desc: "Add Intelligence in your Product",
-    cat: "ai",
-    img: "./img/ai.jpg",
-  },
-  {
-    id: 7,
-    title: "DevOPs Engineer",
-    desc: "Deploy Your Websites Easily",
-    cat: "dev",
-    img: "./img/devvv.jpg",
-  },
-  {
-    id: 8,
-    title: "Software Builders",
-    desc: "Build Your Entire Software",
-    cat: "soft",
-    img: "./img/soft.jpg",
-  },
-];
-
 export const projects = [
   {
     id: 1,
@@ -89,30 +30,30 @@ export const projects = [
   {
     id: 5,
     img: "./img/datalyst.jpg",
-    pp: "./img/naruto.png",
+    pp: "./img/sakshi.png",
     cat: "Data Analyst",
-    username: "Naruto Uzumaki",
+    username: "Sakshi Bhojwani",
   },
   {
     id: 6,
     img: "./img/gamedev.jpg",
-    pp: "./img/itachi.png",
+    pp: "./img/atul.jpeg",
     cat: "Game Artist",
-    username: "Itachi Uchiha",
+    username: "Atul Prasad",
   },
   {
     id: 7,
     img: "./img/cyberr.jpg",
-    pp: "./img/gon.png",
+    pp: "./img/meet3.jpg",
     cat: "Cyber Guardian",
-    username: "Gon Freecss",
+    username: "Meet Tilokani",
   },
   {
     id: 8,
     img: "./img/appdev.jpeg",
-    pp: "./img/kuroko.jpg",
+    pp: "./img/aakash.png",
     cat: "App Developer",
-    username: "Kuroko Tetsuya",
+    username: "Aakash Pawar",
   },
 ];
 

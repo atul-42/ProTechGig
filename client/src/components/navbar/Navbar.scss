@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color:white;
-  color: white;
+  color: black;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -15,7 +15,7 @@
 
     button {
       background-color: white !important;
-      color: #0076b6 !important;
+      color: black !important;
       border: 1px solid #0076b6 !important;
     }
   }
@@ -78,10 +78,10 @@
       }
 
       button {
-        color: white;
+        color:black;
         padding: 10px 20px;
         border-radius: 5px;
-        border: 1px solid white;
+        border: 2px solid #0076b6;
         background-color: transparent;
         cursor: pointer;
 

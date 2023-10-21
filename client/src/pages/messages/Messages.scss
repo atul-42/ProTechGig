@@ -1,10 +1,21 @@
 .messages {
+  font-family: "Roboto", sans-serif;
+  background-color: #f1fdf7;
+  color: #555;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 
   .container {
-    width: 1400px;
-    padding: 50px 0px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    h1 {
+      font-size: 3em;
+      color:#0076b6;;
+
+    }
 
     .title {
       display: flex;
@@ -22,36 +33,28 @@
 
     table {
       width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+      border: 1px solid black;
+      background-color: white; // Set the background color of the table
 
-      tr {
-        height: 100px;
-        th {
-          text-align: left;
-        }
-        td {
-          padding: 10px;
+      th,
+      td {
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+        width: 25%;
 
-          &:first-child {
-            font-weight: 500;
-          }
-          
-          &:nth-child(2),
-          &:nth-child(3) {
-            color: gray;
-          }
-        }
-
-        button {
-          background-color: #0076b6;
-          color: white;
-          padding: 10px;
-          border: none;
-          cursor: pointer;
+        img {
+          width: 100%;
+          max-height: 100px;
+          object-fit: cover;
         }
 
-        &.active {
-          background-color: #0d084d;
-        }
+    }
+
+      &.active {
+        background-color: #0d084d;
       }
     }
   }
